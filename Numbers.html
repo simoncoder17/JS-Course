@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123e5;
+let y = 123e-5;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+<h2>With or without decimal</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo-one"></p>
+
+<script>
+let a = 3.14;
+let b = 3;
+document.getElementById("demo-one").innerHTML = a + "<br>" + b;
+</script>
+
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<!-- Integer Precision -->
+
+<p id="demo-two"></p>
+
+<script>
+let c = 999999999999999;
+let d = 9999999999999999;
+document.getElementById("demo").innerHTML = c + "<br>" + d;
+</script>
+
+<!-- Floating Precision -->
+
+<h2>Floating Point Precision</h2>
+
+<p>Floating point arithmetic is not always 100% accurate.</p>
+
+<p id="demo3"></p>
+
+<script>
+let p = 0.2 + 0.1;
+document.getElementById("demo3").innerHTML = "0.2 + 0.1 = " + p;
+</script>
+
+
+<!--Adding Numbers and Strings-->
+
+<h2>Adding Numbers and Strings</h2>
+
+<p>If you add two numbers, the result will be a number:</p>
+
+<p id="demo"></p>
+
+<script>
+let e = 10;
+let f = 20;
+let g = x + y;
+document.getElementById("demo").innerHTML = g;
+</script>
+
+</body>
+</html>

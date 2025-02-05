@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<!--Quotes Inside Quotes-->
+
+
+<h2>Quotes Inside Quotes</h2>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo1"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo1").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+<!--Template Strings-->
+
+<h2>Template Strings</h2>
+<p>With back-ticks, you can use both single and double quotes inside a string:</p>
+
+<p id="demo2"></p>
+
+<p>Templates not supported in Internet Explorer.</p>
+
+<script>
+let para = `He's often called "Johnny"`;
+document.getElementById("demo2").innerHTML = para;
+</script>
+
+<!--String Length-->
+
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo3"></p>
+
+<script>
+let xyz = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo3").innerHTML = xyz.length;
+</script>
+
+<!--Escape Characters-->
+
+<h2>Escape Characters</h2>
+
+<p>The escape sequence \' inserts a single quote in a string.</p>
+
+<p id="demo3"></p>
+
+<script>
+let abc = 'It\'s alright.';
+document.getElementById("demo3").innerHTML = abc; 
+</script>
+
+</body>
+</html>
